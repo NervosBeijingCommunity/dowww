@@ -13,7 +13,7 @@
   <meta name="msapplication-TileImage" content="/favicon.png">
   <meta name="msapplication-TileColor" content="#06BDFF">
     
-    <link rel="preload" href="/dowww/assets/css/0.styles.a811ab35.css" as="style"><link rel="preload" href="/dowww/assets/js/app.12a019e0.js" as="script"><link rel="preload" href="/dowww/assets/js/13.99712093.js" as="script"><link rel="preload" href="/dowww/assets/js/2.8764f6f6.js" as="script"><link rel="prefetch" href="/dowww/assets/js/10.6bc222b3.js"><link rel="prefetch" href="/dowww/assets/js/11.241baae8.js"><link rel="prefetch" href="/dowww/assets/js/12.b35b6f52.js"><link rel="prefetch" href="/dowww/assets/js/14.5824e266.js"><link rel="prefetch" href="/dowww/assets/js/15.77d46b2f.js"><link rel="prefetch" href="/dowww/assets/js/16.01b8bdaf.js"><link rel="prefetch" href="/dowww/assets/js/17.870b7e10.js"><link rel="prefetch" href="/dowww/assets/js/18.7e4e8eed.js"><link rel="prefetch" href="/dowww/assets/js/19.70e7dc34.js"><link rel="prefetch" href="/dowww/assets/js/3.79307f51.js"><link rel="prefetch" href="/dowww/assets/js/4.d43a1d54.js"><link rel="prefetch" href="/dowww/assets/js/5.ce6f2841.js"><link rel="prefetch" href="/dowww/assets/js/6.58a803d3.js"><link rel="prefetch" href="/dowww/assets/js/7.c4194fde.js"><link rel="prefetch" href="/dowww/assets/js/8.c86ac828.js"><link rel="prefetch" href="/dowww/assets/js/9.7456aa20.js">
+    <link rel="preload" href="/dowww/assets/css/0.styles.a811ab35.css" as="style"><link rel="preload" href="/dowww/assets/js/app.3227af99.js" as="script"><link rel="preload" href="/dowww/assets/js/13.99712093.js" as="script"><link rel="preload" href="/dowww/assets/js/2.8764f6f6.js" as="script"><link rel="prefetch" href="/dowww/assets/js/10.6bc222b3.js"><link rel="prefetch" href="/dowww/assets/js/11.241baae8.js"><link rel="prefetch" href="/dowww/assets/js/12.b35b6f52.js"><link rel="prefetch" href="/dowww/assets/js/14.5824e266.js"><link rel="prefetch" href="/dowww/assets/js/15.77d46b2f.js"><link rel="prefetch" href="/dowww/assets/js/16.01b8bdaf.js"><link rel="prefetch" href="/dowww/assets/js/17.870b7e10.js"><link rel="prefetch" href="/dowww/assets/js/18.4d319e44.js"><link rel="prefetch" href="/dowww/assets/js/19.70e7dc34.js"><link rel="prefetch" href="/dowww/assets/js/3.79307f51.js"><link rel="prefetch" href="/dowww/assets/js/4.d43a1d54.js"><link rel="prefetch" href="/dowww/assets/js/5.ce6f2841.js"><link rel="prefetch" href="/dowww/assets/js/6.58a803d3.js"><link rel="prefetch" href="/dowww/assets/js/7.c4194fde.js"><link rel="prefetch" href="/dowww/assets/js/8.c86ac828.js"><link rel="prefetch" href="/dowww/assets/js/9.7456aa20.js">
     <link rel="stylesheet" href="/dowww/assets/css/0.styles.a811ab35.css">
   </head>
   <body>
@@ -47,7 +47,7 @@ nvm use stable
 </code></pre></div><p>这样 VSCode 就会使用 WSL 来运行 <code>Node.js</code> 。</p> <p><strong>注意</strong>：当 Windows 版本早于 <code>Windows 10, build 15063</code> 时，可能会遇到 <code>Error 0x80070057</code> 报错，这个时候可以尝试添加 <code>&quot;console&quot;: &quot;integratedTerminal&quot;</code> 或者 <code>&quot;console&quot;: &quot;externalTerminal&quot;</code> 到 <code>launch.json</code> 里。</p> <h2 id="nativemodule-的再编译"><a href="#nativemodule-的再编译" aria-hidden="true" class="header-anchor">#</a> <code>NativeModule</code> 的再编译</h2> <p>大部分模块即使在 Windows 中被安装也能在 WSL 中使用，反之亦然。
 但有些模块是分不同系统平台的。切换系统需要重新编译。可以在项目根目录下载 Windows 命令行里执行以下命令：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span>
 <span class="token function">bash</span> -i -c <span class="token string">&quot;npm rebuild&quot;</span>
-</code></pre></div><p>当然直接 WSL 里执行 <code>npm rebuild</code> 也是可以的。</p> <p>👌 到此就已经全部结束了，在 VSCode 里安装需要使用的插件吧！</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/24/2018, 8:16:20 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><p>当然直接 WSL 里执行 <code>npm rebuild</code> 也是可以的。</p> <p>👌 到此就已经全部结束了，在 VSCode 里安装需要使用的插件吧！</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/26/2018, 11:04:49 AM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/dowww/3-VSCode/3-5-LaTeX.html" class="prev">
           LaTeX
@@ -56,6 +56,6 @@ nvm use stable
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/dowww/assets/js/app.12a019e0.js" defer></script><script src="/dowww/assets/js/13.99712093.js" defer></script><script src="/dowww/assets/js/2.8764f6f6.js" defer></script>
+    <script src="/dowww/assets/js/app.3227af99.js" defer></script><script src="/dowww/assets/js/13.99712093.js" defer></script><script src="/dowww/assets/js/2.8764f6f6.js" defer></script>
   </body>
 </html>
