@@ -13,7 +13,7 @@
   <meta name="msapplication-TileImage" content="/favicon.png">
   <meta name="msapplication-TileColor" content="#06BDFF">
     
-    <link rel="preload" href="/dowww/assets/css/0.styles.a811ab35.css" as="style"><link rel="preload" href="/dowww/assets/js/app.9c16d570.js" as="script"><link rel="preload" href="/dowww/assets/js/13.06c427ec.js" as="script"><link rel="preload" href="/dowww/assets/js/2.8764f6f6.js" as="script"><link rel="prefetch" href="/dowww/assets/js/10.72eec9ad.js"><link rel="prefetch" href="/dowww/assets/js/11.e5394ee2.js"><link rel="prefetch" href="/dowww/assets/js/12.b35b6f52.js"><link rel="prefetch" href="/dowww/assets/js/14.5824e266.js"><link rel="prefetch" href="/dowww/assets/js/15.77d46b2f.js"><link rel="prefetch" href="/dowww/assets/js/16.01b8bdaf.js"><link rel="prefetch" href="/dowww/assets/js/17.870b7e10.js"><link rel="prefetch" href="/dowww/assets/js/18.1939809a.js"><link rel="prefetch" href="/dowww/assets/js/19.70e7dc34.js"><link rel="prefetch" href="/dowww/assets/js/3.79307f51.js"><link rel="prefetch" href="/dowww/assets/js/4.d43a1d54.js"><link rel="prefetch" href="/dowww/assets/js/5.ce6f2841.js"><link rel="prefetch" href="/dowww/assets/js/6.d1ef0d52.js"><link rel="prefetch" href="/dowww/assets/js/7.8d6886dd.js"><link rel="prefetch" href="/dowww/assets/js/8.e61504f7.js"><link rel="prefetch" href="/dowww/assets/js/9.f712e2e6.js">
+    <link rel="preload" href="/dowww/assets/css/0.styles.a811ab35.css" as="style"><link rel="preload" href="/dowww/assets/js/app.64d1bbf3.js" as="script"><link rel="preload" href="/dowww/assets/js/13.bb5054c9.js" as="script"><link rel="preload" href="/dowww/assets/js/2.8764f6f6.js" as="script"><link rel="prefetch" href="/dowww/assets/js/10.72eec9ad.js"><link rel="prefetch" href="/dowww/assets/js/11.e5394ee2.js"><link rel="prefetch" href="/dowww/assets/js/12.b35b6f52.js"><link rel="prefetch" href="/dowww/assets/js/14.5824e266.js"><link rel="prefetch" href="/dowww/assets/js/15.77d46b2f.js"><link rel="prefetch" href="/dowww/assets/js/16.01b8bdaf.js"><link rel="prefetch" href="/dowww/assets/js/17.870b7e10.js"><link rel="prefetch" href="/dowww/assets/js/18.1939809a.js"><link rel="prefetch" href="/dowww/assets/js/19.70e7dc34.js"><link rel="prefetch" href="/dowww/assets/js/3.79307f51.js"><link rel="prefetch" href="/dowww/assets/js/4.d43a1d54.js"><link rel="prefetch" href="/dowww/assets/js/5.ce6f2841.js"><link rel="prefetch" href="/dowww/assets/js/6.d1ef0d52.js"><link rel="prefetch" href="/dowww/assets/js/7.8d6886dd.js"><link rel="prefetch" href="/dowww/assets/js/8.e61504f7.js"><link rel="prefetch" href="/dowww/assets/js/9.f712e2e6.js">
     <link rel="stylesheet" href="/dowww/assets/css/0.styles.a811ab35.css">
   </head>
   <body>
@@ -78,10 +78,10 @@ wsl.exe -c &quot;node %v_params%&quot;
   <span class="token property">&quot;debug&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node --inspect-brk app.js&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre></div><ul><li>以调试模式运行程序：</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>yarn debug
-</code></pre></div><ul><li>开启 VSCode 的调试进程：快捷键 <code>F5</code></li></ul> <div align="center"><img src="https://i.loli.net/2018/12/30/5c284b7eb888c.gif" alt="nodejs-debugger-demo"></div> <p>经过这样的配置，我们就可以方便的利用 VSCode 强大的调试功能对我们的 Node.js 程序调试开发了。🍻</p> <h2 id="nativemodule-的再编译"><a href="#nativemodule-的再编译" aria-hidden="true" class="header-anchor">#</a> <code>NativeModule</code> 的再编译</h2> <p>大部分模块即使在 Windows 中被安装也能在 WSL 中使用，反之亦然。
+</code></pre></div><ul><li>开启 VSCode 的调试进程：快捷键 <code>F5</code></li></ul> <p><img src="https://ws1.sinaimg.cn/large/e264e10ely1fyosaj40reg21wk13ze81.gif" alt></p> <p>经过这样的配置，我们就可以方便的利用 VSCode 强大的调试功能对我们的 Node.js 程序调试开发了。🍻</p> <h2 id="nativemodule-的再编译"><a href="#nativemodule-的再编译" aria-hidden="true" class="header-anchor">#</a> <code>NativeModule</code> 的再编译</h2> <p>大部分模块即使在 Windows 中被安装也能在 WSL 中使用，反之亦然。
 但有些模块是分不同系统平台的。切换系统需要重新编译。可以在项目根目录下载 Windows 命令行里执行以下命令：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span>
 <span class="token function">bash</span> -i -c <span class="token string">&quot;npm rebuild&quot;</span>
-</code></pre></div><p>当然直接 WSL 里执行 <code>npm rebuild</code> 也是可以的。</p> <p>👌 到此就已经全部结束了，在 VSCode 里安装需要使用的插件吧！</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/30/2018, 1:11:24 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><p>当然直接 WSL 里执行 <code>npm rebuild</code> 也是可以的。</p> <p>👌 到此就已经全部结束了，在 VSCode 里安装需要使用的插件吧！</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/30/2018, 3:06:19 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/dowww/3-VSCode/3-5-LaTeX.html" class="prev">
           LaTeX
@@ -90,6 +90,6 @@ wsl.exe -c &quot;node %v_params%&quot;
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/dowww/assets/js/app.9c16d570.js" defer></script><script src="/dowww/assets/js/13.06c427ec.js" defer></script><script src="/dowww/assets/js/2.8764f6f6.js" defer></script>
+    <script src="/dowww/assets/js/app.64d1bbf3.js" defer></script><script src="/dowww/assets/js/13.bb5054c9.js" defer></script><script src="/dowww/assets/js/2.8764f6f6.js" defer></script>
   </body>
 </html>
